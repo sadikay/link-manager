@@ -6,7 +6,7 @@ module Link
 
       # Genarates short links has custom data
       # If the 'sub_id' greater than one you can pass it like below
-      # sub_id = 12345_7854_asdfg
+      # sub_id = 12345_7854
       # The link-manager ll split them after redirecting
       def initialize(long_string = nil, sub_id = nil)
         @long_url = long_string

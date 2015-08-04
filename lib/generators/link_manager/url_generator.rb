@@ -1,10 +1,10 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-class GenerateUrlRedirector < Rails::Generators::Base
+class ShortenerGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
   def self.source_root
-     @source_root ||= File.join(File.dirname(__FILE__), 'templates')
+    @source_root ||= File.join(File.dirname(__FILE__), 'templates')
   end
 
   def self.next_migration_number(dirname)
@@ -16,6 +16,6 @@ class GenerateUrlRedirector < Rails::Generators::Base
   end
 
   def create_migration_file
-    migration_template 'migration.rb', 'db/migrate/create_url_redirectors_table.rb'
+    migration_template 'migration.rb', 'db/migrate/create_url_redirection_table.rb'
   end
 end
