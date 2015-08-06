@@ -1,6 +1,6 @@
 class LinkManager::UrlRedirection < ActiveRecord::Base
 
-  after_create: generate_short_code
+  after_create :generate_short_code
   
   def generate_short_code
     loop do

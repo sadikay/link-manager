@@ -1,5 +1,5 @@
 require "rails/engine"
-require "shortener"
+require "link_manager"
 
 class LinkManager::Engine < ::Rails::Engine #:nodoc:
   config.link_manager = LinkManager

@@ -1,8 +1,7 @@
-# Link::Manager
+# LinkManager
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/link/manager`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+LinkManager creates a short url instead of your long url, also count the redirecting to shortened url while disabling
+bot clicks. It has sub_id field to pass your custom data with your url.
 
 ## Installation
 
