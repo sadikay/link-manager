@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'link/manager/version'
+require 'link_manager/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "link-manager"
-  spec.version       = Link::Manager::VERSION
+  spec.version       = LinkManager::VERSION
   spec.authors       = ["Sadik Ay"]
   spec.email         = ["sadikay91@gmail.com"]
 

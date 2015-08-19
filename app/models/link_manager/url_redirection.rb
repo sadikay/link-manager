@@ -1,7 +1,7 @@
 class LinkManager::UrlRedirection < ActiveRecord::Base
 
   after_create :generate_short_code
-  
+
   def generate_short_code
     loop do
       code = (0...6).map { ('a'..'z').to_a[rand(26)] }.join
